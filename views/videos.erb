@@ -1,0 +1,5 @@
+<% @videos.each do |v| %>
+	<h2><%= v.title %></h2>
+	<%= v.description %><br>
+	<%= youtube_embed(v.video_url)%><br>
+<% end %>

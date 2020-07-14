@@ -1,0 +1,13 @@
+<% if params["title"] && params["description"] && params["video_url"] || params["pro"] %>
+<% v = Video.new %>
+	<% v.title = params["title"] %>
+	<% v.description = params["description"] %>
+	<% v.video_url = params["video_url"] %>
+	<% #if params["pro"] %>	
+		<% if params["pro"] == "on"%>
+		<% v.pro = true %>
+		<% end %>
+	<% #end %>
+	<% v.save %>
+<% end %>
+Video Added Successfully
