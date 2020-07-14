@@ -101,7 +101,7 @@ GEM
       websocket-driver (>= 0.2.0)
     public_suffix (3.0.3)
     puma (3.10.0)
-    rack (2.0.5)
+    rack (2.2.3)
     rack-protection (2.0.4)
       rack
     rack-test (1.1.0)
